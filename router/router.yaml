@@ -1,5 +1,11 @@
 # Configuration of the router's HTTP server
 # Default configuration for container
+coprocessor:
+  url: https://coprocessor-wn3vwa6nlq-ue.a.run.app
+  timeout: 2s
+  router:
+    response:
+      body: true
 supergraph:
   # The socket address and port to listen on
   listen: 0.0.0.0:${env.PORT:-4000}
